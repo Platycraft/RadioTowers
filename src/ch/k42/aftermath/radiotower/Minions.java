@@ -41,7 +41,7 @@ public class Minions {
         if(scale>=1.5) return "";
         Random r = new Random();
         StringBuffer sb = new StringBuffer();
-        double mean = 3.5*scale;
+        double mean = 3*scale;
         double sigma = 0.5;
 
         for(int i=0;i<message.length();i++){
@@ -102,9 +102,9 @@ public class Minions {
     }
 
     public static final String powerToString(double power){
-        int decibel = (int) (Math.log10(power));
-        return String.format("%ddB",decibel);
+        if(power<=0) return "0dBm";
+
+        double db =(Math.log10(1000*power));
+        return String.format("%1.2fdBm %f",db,power);
     }
-
-
 }

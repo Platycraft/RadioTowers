@@ -23,6 +23,8 @@ public class RadioTower{
     private static final int D_FREQ = 10; // 10 MHz Bands
     private static final int MIN_FREQ = 1000; // 1 MHz
 
+    private static final int ALPHA = 100; // 1 MHz
+
 
     private static int MIN_HEIGHT = 6;
     private static int MAX_HEIGHT = 50;
@@ -36,7 +38,6 @@ public class RadioTower{
 
     private int maxRange = 0;
 
-    private double alpha;  // Antenna farfield parameters p(r)=alpha*(r-R)^2
     private double antennaGain;
     private int frequency;
     private String frequencyString;
@@ -83,7 +84,7 @@ public class RadioTower{
     }
 
     private void calculateRange(int height) {
-        double linFactor = ((height-MIN_HEIGHT)/( (double) MAX_HEIGHT-MIN_HEIGHT));
+        double linFactor = ((height)/( (double) MAX_HEIGHT));
         if(linFactor<0) linFactor=0;
 
         int range = (int) (MAX_RANGE*linFactor);
@@ -91,30 +92,32 @@ public class RadioTower{
         if(range<0) range=0;
 
         range += 20;
-        this.alpha = antennaGain/(range*range);
         this.maxRange = range;
     }
 
-    private double powerLaw(int r){
+
+    private double invPowerLaw(double r){
         if(r>this.maxRange) return 0;
-        return this.alpha*(r-this.maxRange)*(r-this.maxRange); // p(r)=a*(r-R)^2
+        if(r<1) r=1;
+        return ALPHA/(r);
+        //return this.alphaSQ*(r-this.maxRange)*(r-this.maxRange); // p(r)=a*(r-R)^2
     }
 
 
     public double getReceptionPower(Location location) {
-
         if(this.location.getBlock().getBlockPower()!=0) return 0; // tower off?
 
-        int distance = (int) this.location.distance(location);
-        return powerLaw(distance);
+        double distance =this.location.distance(location);
+        if(distance>MAX_RANGE) return 0;
+        return this.antennaGain* invPowerLaw(distance);
     }
 
     public double getNormReceptionPower(Location location) {
 
         if(this.location.getBlock().getBlockPower()!=0) return 0; // tower off?
-
-        int distance = (int) this.location.distance(location);
-        return powerLaw(distance)/this.antennaGain;
+        double distance =this.location.distance(location);
+        if(distance>MAX_RANGE) return 0;
+        return invPowerLaw(distance);
     }
 
     public boolean update() {
@@ -167,6 +170,7 @@ public class RadioTower{
      * Too much duplication FIXME
      */
     public static boolean validate(Location location){
+        if(location==null) return false;
         int WORLD_HEIGHT = location.getWorld().getMaxHeight();
         if(!location.getBlock().getType().equals(BASE_BLOCK)) // check if base is correct
             return false;

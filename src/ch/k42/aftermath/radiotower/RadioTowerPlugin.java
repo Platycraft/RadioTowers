@@ -95,8 +95,13 @@ public class RadioTowerPlugin extends JavaPlugin
                     x = Integer.parseInt(split[1]);
                     y = Integer.parseInt(split[2]);
                     z = Integer.parseInt(split[3]);
-                    location = new Location(world,x,y,z);
-                    towers.add(location);
+                    try {
+                        location = new Location(world,x,y,z);
+                        towers.add(location);
+                    }catch (Exception e){
+                        getLogger().warning("couldn't read line <" + line + "> in towers file");
+                    }
+
                 }
                 String everything = sb.toString();
             } catch (FileNotFoundException e) {
