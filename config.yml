@@ -1,0 +1,11 @@
+cooldowns:
+  radiomessagecooldown: 5
+
+loreitems:
+  radio: &bRadio        # Use & for color codes
+
+radiotower:
+  minimumHeight: 6      # minimum height of the antenna to be valid (but no range)
+  maximumHeight: 40     # maximum height of the antenna, higher antennas won't help increase range
+  maximumRange: 5000    # maximum range that can be achieved with this antenna if it's height is maximumHeight
+

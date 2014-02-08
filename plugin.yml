@@ -1,0 +1,8 @@
+name: RadioTowers
+main: ch.k42.aftermath.radiotower.RadioTowerPlugin
+version: 0.2
+description: RadioTower Plugin, adds radio towers!
+
+depend:
+
+permissions:

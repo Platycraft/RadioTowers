@@ -1,0 +1,10 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="RadioTowers:jar">
+    <output-path>$PROJECT_DIR$/bin</output-path>
+    <root id="archive" name="RadioTowers.jar">
+      <element id="module-output" name="RadioTowers" />
+      <element id="file-copy" path="$PROJECT_DIR$/config.yml" />
+      <element id="file-copy" path="$PROJECT_DIR$/plugin.yml" />
+    </root>
+  </artifact>
+</component>
