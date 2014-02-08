@@ -105,6 +105,6 @@ public class Minions {
         if(power<=0) return "0dBm";
 
         double db =(Math.log10(1000*power));
-        return String.format("%1.2fdBm %f",db,power);
+        return String.format("%1.2fdBm",db);
     }
 }

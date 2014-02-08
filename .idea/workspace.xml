@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed771651-c02a-45bf-9b9e-ff94bf8d43eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RadioTowers.jar" afterPath="$PROJECT_DIR$/bin/RadioTowers.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RadioTowers.iws" />
@@ -71,10 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="RadioTower.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RadioTower.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="41" selection-start="892" selection-end="892" vertical-scroll-proportion="0.48350397" vertical-offset="0" max-vertical-offset="4403">
+            <state line="30" column="41" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
               <folding />
             </state>
           </provider>
@@ -118,10 +114,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Minions.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="Minions.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="27" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1853">
+            <state line="107" column="42" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.8259386" vertical-offset="974" max-vertical-offset="1853">
               <folding />
             </state>
           </provider>
@@ -187,8 +183,8 @@
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
         <option value="$PROJECT_DIR$/config.yml" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
-        <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java" />
+        <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" />
       </list>
     </option>
   </component>
@@ -499,6 +495,11 @@
       <created>1391872813295</created>
       <updated>1391872813295</updated>
     </task>
+    <task id="LOCAL-00001" summary="changed power law">
+      <created>1391886178209</created>
+      <updated>1391886178209</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -543,6 +544,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="changed power law" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed power law" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -687,16 +690,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="27" selection-start="1583" selection-end="1583" vertical-scroll-proportion="0.0" vertical-offset="668" max-vertical-offset="1853">
+        <state line="30" column="41" selection-start="892" selection-end="892" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4403">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="41" selection-start="892" selection-end="892" vertical-scroll-proportion="0.48350397" vertical-offset="0" max-vertical-offset="4403">
+        <state line="107" column="42" selection-start="3787" selection-end="3787" vertical-scroll-proportion="0.8259386" vertical-offset="974" max-vertical-offset="1853">
           <folding />
         </state>
       </provider>
