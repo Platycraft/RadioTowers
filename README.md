@@ -7,7 +7,7 @@ Plugin that adds radiotowers to minecraft
 === How to build a radio tower:
 
 
-
+```
                       #   ^
                       #   |
  iron fences    ->    #   |
@@ -20,6 +20,8 @@ Plugin that adds radiotowers to minecraft
                       ^
                       |
                 obsidian block
+                
+```
                   
 The antenna (iron fences) must have a minimum height, usually this is around 7 fences. This depends on the configuration of the plugin. The higher the antenna, the higher the antenna gain. Usually an antenna with height 40 gives you the maximum antenna gain and therefore the biggest range. But again, this depends on the configuration of the plugin.
 If you successfully built a radio tower, you will see a little effect around the obsidian block.
