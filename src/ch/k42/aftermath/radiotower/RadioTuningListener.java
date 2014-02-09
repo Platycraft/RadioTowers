@@ -4,12 +4,15 @@ import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
+import org.bukkit.event.block.Action;
+import org.bukkit.event.player.PlayerInteractEvent;
 import org.bukkit.event.player.PlayerItemHeldEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 import org.bukkit.plugin.Plugin;
 //import sun.net.www.content.text.plain;
 
+import java.util.List;
 import java.util.Map;
 import java.util.concurrent.ConcurrentHashMap;
 
@@ -19,10 +22,10 @@ import java.util.concurrent.ConcurrentHashMap;
 public class RadioTuningListener implements Listener{
 
     private final String LOREITEMRADIO;
-    private final Plugin plugin;
+    private final RadioTowerPlugin plugin;
     private Map<Player,RadioListener> receivers = new ConcurrentHashMap<Player, RadioListener>();
 
-    public RadioTuningListener(String LOREITEMRADIO, Plugin plugin) {
+    public RadioTuningListener(String LOREITEMRADIO, RadioTowerPlugin plugin) {
         this.LOREITEMRADIO = LOREITEMRADIO;
         this.plugin = plugin;
     }
@@ -33,7 +36,7 @@ public class RadioTuningListener implements Listener{
         Player player = event.getPlayer();
         ItemStack item = player.getInventory().getItem(slot);
 
-        if(hasName(item, LOREITEMRADIO)){
+        if(Minions.isNamedRadio(item, LOREITEMRADIO)){
             if(receivers.containsKey(player)) return; // already listening
             plugin.getLogger().info("Adding listener");
             RadioListener l = new RadioListener(LOREITEMRADIO, event.getPlayer());
@@ -48,13 +51,31 @@ public class RadioTuningListener implements Listener{
         }
     }
 
-    private boolean hasName(ItemStack item, String lore){
-        ItemMeta itemMeta = item.getItemMeta();
-        if(itemMeta==null) return false;
-        String name = itemMeta.getDisplayName();
-        if(name==null) return false;
-        plugin.getLogger().finest(name + " <=> " + lore + " ?");
-        return name.equals(lore);
-    }
+    @EventHandler
+    public void rightClick(PlayerInteractEvent event){
+        if(!event.getAction().equals(Action.RIGHT_CLICK_AIR)) return;
+        if(Minions.isNamedRadio(event.getItem(),LOREITEMRADIO)){ // yes, clicked in the air with radio
+            plugin.getLogger().finest("Radio interact event");
+            Player player = event.getPlayer();
+            if(!receivers.containsKey(player)) return;
+            RadioListener receiver = receivers.get(player);
 
+            int index = receiver.getRadioNr()+1; // increment index
+            List<RadioTower> towers = plugin.getRadioTowerManager().getTowers();
+            if(towers.size()==0){
+                player.sendMessage("No signal found.");
+                return; // no towers
+            }
+            if(index>=towers.size()) index =0; // index out of bounds?
+            RadioTower tower = towers.get(index);
+
+            if(0<tower.getReceptionPower(player.getLocation())){
+                player.sendMessage("Found signal on " + tower.getFrequencyString() +", tuning radio");
+                player.setCompassTarget(tower.getLocation());
+            }else{
+                player.sendMessage("Found a signal on "+tower.getFrequencyString()+", but received power is to low for further measurements");
+            }
+            receiver.setRadioNr(index);
+        }
+    }
 }

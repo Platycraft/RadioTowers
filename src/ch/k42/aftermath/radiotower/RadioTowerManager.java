@@ -10,14 +10,15 @@ import org.bukkit.material.RedstoneTorch;
 import org.bukkit.material.Sign;
 import org.bukkit.plugin.Plugin;
 
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
 
 /**
  * Created by Thomas on 07.02.14.
  */
 public class RadioTowerManager implements Listener, Runnable {
+
+
     private Map<Location,RadioTower> towers = new ConcurrentHashMap<Location, RadioTower>();
     private Plugin plugin;
 
@@ -36,6 +37,10 @@ public class RadioTowerManager implements Listener, Runnable {
 
     public Set<Location> getTowerLocations(){
         return towers.keySet();
+    }
+
+    public final List<RadioTower> getTowers() {
+        return Collections.unmodifiableList(new ArrayList<RadioTower>(towers.values()));
     }
 
     private static final int MAX_BLOCKCHECK = 10;

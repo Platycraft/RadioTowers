@@ -2,6 +2,10 @@ package ch.k42.aftermath.radiotower;
 
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
+import org.bukkit.Material;
+import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.inventory.meta.ItemMeta;
 
 import java.nio.ByteBuffer;
 import java.security.MessageDigest;
@@ -106,5 +110,17 @@ public class Minions {
 
         double db =(Math.log10(1000*power));
         return String.format("%1.2fdBm",db);
+    }
+
+    private static final Material RADIO = Material.COMPASS;
+    public static boolean isNamedRadio(ItemStack item, String LOREITEMRADIO){
+        if(!item.getType().equals(RADIO)) return false;
+        ItemMeta meta = item.getItemMeta();
+        if(meta==null) return false;
+        String name = meta.getDisplayName();
+        if(name==null) return false;
+        if(!name.equals(LOREITEMRADIO)) return false;
+        return true;
+
     }
 }
