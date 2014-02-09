@@ -4,8 +4,10 @@ RadioTowers
 Plugin that adds radiotowers to minecraft.
 
 
-Author: Thomas Richner
-License: [GNU General Public License, version 3 (GPL-3.0)](http://opensource.org/licenses/gpl-3.0)
+**Author:** Thomas Richner
+
+**License:** [GNU General Public License, version 3 (GPL-3.0)](http://opensource.org/licenses/gpl-3.0)
+
 Credit to redinzane for the configuration file handling.
 
 
