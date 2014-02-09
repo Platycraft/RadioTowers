@@ -36,3 +36,17 @@ Upon receiving a signal, your radio will display the sending frequency, the sign
 Per right clicking in the air with the radio in hand, you can tune your radio to a specific tower. If the reception is good enough, the compass will direct you to the antenna.
 
 
+### Configuration of the plugin
+
+To get an idea of what each option does, please look at the config.yml :
+https://github.com/trichner/RadioTowers/blob/master/config.yml
+
+Bonus features:
+- autosaves towers to file asynchronously
+- checks validity of towers before broadcasting, minimizing risk of glitches
+- order in which tower is built doesn't matter
+- fancy effect for tower completion
+- realistic signal strength based on distance to tower
+- based on the Bukkit Event System
+
+
