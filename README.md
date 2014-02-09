@@ -10,6 +10,12 @@ Plugin that adds radiotowers to minecraft.
 
 Credit to redinzane for the configuration file handling.
 
+### How to install:
+
+You can usually find a compiled binary in the folder `/bin`, copy it
+in your Bukkit- / Spigot- Minecraftserver's `/plugin` folder, run it once to generate the plugin folder and config and customize the `config.yml` as you like.
+
+To get an idea of what each option does, please look at the default  [config.yml](https://github.com/trichner/RadioTowers/blob/master/config.yml).
 
 ### How to build a radio tower:
 
@@ -42,11 +48,6 @@ In order to reveive a signal, you must held a radio in your hand. A radio is a n
 Upon receiving a signal, your radio will display the sending frequency, the signal strenght in dBm and the broadcasted message.
 Per right clicking in the air with the radio in hand, you can tune your radio to a specific tower. If the reception is good enough, the compass will direct you to the antenna.
 
-
-### Configuration of the plugin
-
-To get an idea of what each option does, please look at the [config.yml](https://github.com/trichner/RadioTowers/blob/master/config.yml).
-
 ### Some bonus features:
 - autosaves towers to file asynchronously
 - checks validity of towers before broadcasting, minimizing risk of glitches
@@ -54,6 +55,8 @@ To get an idea of what each option does, please look at the [config.yml](https:/
 - fancy effect for tower completion
 - realistic signal strength based on distance to tower
 - based on the Bukkit Event System
+- no dependencies to other plugins/libraries
+- kinda robust
 
 ### Wow, such plugin, much coding
 DAthmosSZLtk6LC1wJVcgdXchPXuhb1a9E
