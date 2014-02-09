@@ -1,7 +1,12 @@
 RadioTowers
 ===========
 
-Plugin that adds radiotowers to minecraft
+Plugin that adds radiotowers to minecraft.
+
+
+Author: Thomas Richner
+License: [GNU General Public License, version 3 (GPL-3.0)](http://opensource.org/licenses/gpl-3.0)
+Credit to redinzane for the configuration file handling.
 
 
 ### How to build a radio tower:
@@ -38,10 +43,9 @@ Per right clicking in the air with the radio in hand, you can tune your radio to
 
 ### Configuration of the plugin
 
-To get an idea of what each option does, please look at the config.yml :
-https://github.com/trichner/RadioTowers/blob/master/config.yml
+To get an idea of what each option does, please look at the [config.yml](https://github.com/trichner/RadioTowers/blob/master/config.yml).
 
-Bonus features:
+### Some bonus features:
 - autosaves towers to file asynchronously
 - checks validity of towers before broadcasting, minimizing risk of glitches
 - order in which tower is built doesn't matter
@@ -49,4 +53,6 @@ Bonus features:
 - realistic signal strength based on distance to tower
 - based on the Bukkit Event System
 
+### Wow, such plugin, much coding
+DAthmosSZLtk6LC1wJVcgdXchPXuhb1a9E
 
