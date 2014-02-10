@@ -105,6 +105,7 @@ public class RadioTower{
 
 
     public double getReceptionPower(Location location) {
+        if(!this.location.getWorld().equals(location.getWorld())) return 0;
         if(this.location.getBlock().getBlockPower()!=0) return 0; // tower off?
 
         double distance =this.location.distance(location);
@@ -113,8 +114,9 @@ public class RadioTower{
     }
 
     public double getNormReceptionPower(Location location) {
-
+        if(!this.location.getWorld().equals(location.getWorld())) return 0;
         if(this.location.getBlock().getBlockPower()!=0) return 0; // tower off?
+
         double distance =this.location.distance(location);
         if(distance>MAX_RANGE) return 0;
         return invPowerLaw(distance);
