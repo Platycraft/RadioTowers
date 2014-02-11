@@ -1,6 +1,6 @@
 name: RadioTowers
 main: ch.k42.aftermath.radiotower.RadioTowerPlugin
-version: 0.4
+version: 0.4.1
 description: RadioTower Plugin, adds radio towers!
 authors: [AthmosPrime, redinzane, PotatoNorris]
 
