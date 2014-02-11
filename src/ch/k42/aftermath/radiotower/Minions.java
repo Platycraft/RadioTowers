@@ -114,6 +114,7 @@ public class Minions {
 
     private static final Material RADIO = Material.COMPASS;
     public static boolean isNamedRadio(ItemStack item, String LOREITEMRADIO){
+        if(item==null) return false;
         if(!item.getType().equals(RADIO)) return false;
         ItemMeta meta = item.getItemMeta();
         if(meta==null) return false;
