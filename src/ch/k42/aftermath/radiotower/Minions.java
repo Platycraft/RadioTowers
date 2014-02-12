@@ -113,7 +113,7 @@ public class Minions {
     }
 
     private static final Material RADIO = Material.COMPASS;
-    public static boolean isNamedRadio(ItemStack item, String LOREITEMRADIO){
+    public static final boolean isNamedRadio(ItemStack item, String LOREITEMRADIO){
         if(item==null) return false;
         if(!item.getType().equals(RADIO)) return false;
         ItemMeta meta = item.getItemMeta();
@@ -123,5 +123,15 @@ public class Minions {
         if(!name.equals(LOREITEMRADIO)) return false;
         return true;
 
+    }
+
+    public static final boolean hasName(ItemStack item, String lore){
+        if(item==null) return false;
+        ItemMeta meta = item.getItemMeta();
+        if(meta==null) return false;
+        String name = meta.getDisplayName();
+        if(name==null) return false;
+        if(!name.equals(lore)) return false;
+        return true;
     }
 }
