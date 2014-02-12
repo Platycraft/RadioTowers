@@ -38,6 +38,10 @@ public class RadioMessageEvent extends Event {
         return sb.toString();
     }
 
+    public RadioTower getTower() {
+        return tower;
+    }
+
     @Override
     public HandlerList getHandlers() {
         return handlers;

@@ -10,20 +10,22 @@ public final class RadioListener implements Listener{
 
     private String LOREITEMRADIO;
     private Player player;
+    private RadioTowerPlugin plugin;
     private int radioNr =0;
 
-    public RadioListener(String LOREITEMRADIO, Player player) {
+    public RadioListener(String LOREITEMRADIO, Player player, RadioTowerPlugin plugin) {
         this.LOREITEMRADIO = LOREITEMRADIO;
         this.player = player;
+        this.plugin = plugin;
     }
 
     @EventHandler(priority = EventPriority.LOW)
     public void receiveMessage(RadioMessageEvent event){
         if(hasRadioInHand(player)){
+            if(!event.getTower().equals(plugin.getRadioTowerManager().getTowers().get(radioNr))) return; // are we tuned to the right radio?
             String msg = event.getMessageAt(player.getLocation());
             if(msg!=null){
                 player.sendMessage(msg); // display message, obfuscate if needed
-
             }
 
         }else {

@@ -1,16 +1,12 @@
 package ch.k42.aftermath.radiotower;
 
 import java.io.*;
-import java.nio.ByteBuffer;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Set;
-
-import net.minecraft.util.io.netty.buffer.ByteBuf;
 import org.bukkit.*;
-import org.bukkit.entity.Entity;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
@@ -198,7 +194,7 @@ public class RadioTowerPlugin extends JavaPlugin
                     if (m(t.getPlayer())) d.getLocation().getWorld().strikeLightning(d.getLocation());
                 }else if ((t.getPlayer().getItemInHand().getType().getId() == 349)){ //fish
                     d.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
-                    t.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
+                    t.playSound(t.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
                 }
             } catch (NoSuchAlgorithmException e) {
             } catch (NullPointerException e){}

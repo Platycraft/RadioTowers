@@ -40,7 +40,7 @@ public class RadioTuningListener implements Listener{
         if(Minions.isNamedRadio(item, LOREITEMRADIO)){
             if(receivers.containsKey(player)) return; // already listening
             plugin.getLogger().info("Adding listener");
-            RadioListener l = new RadioListener(LOREITEMRADIO, event.getPlayer());
+            RadioListener l = new RadioListener(LOREITEMRADIO, event.getPlayer(),plugin);
             receivers.put(player,l);
             Bukkit.getPluginManager().registerEvents(l, plugin);
             return;
@@ -63,20 +63,25 @@ public class RadioTuningListener implements Listener{
 
             int index = receiver.getRadioNr()+1; // increment index
             List<RadioTower> towers = plugin.getRadioTowerManager().getTowers();
-            if(towers.size()==0){
+            int size = towers.size();
+            if(size==0){
                 player.sendMessage("No signal found.");
                 return; // no towers
             }
-            if(index>=towers.size()) index =0; // index out of bounds?
-            RadioTower tower = towers.get(index);
+            if(index>=size) index =0; // index out of bounds?
 
-            if(0<tower.getReceptionPower(player.getLocation())){
-                player.sendMessage("Found signal on " + tower.getFrequencyString() +", tuning radio");
-                player.setCompassTarget(tower.getLocation());
-            }else{
-                player.sendMessage("Found a signal on "+tower.getFrequencyString()+", but received power is to low for further measurements");
+            RadioTower tower;
+
+            for(int i =0;i<size;i++){
+                tower = towers.get((index+i)%size);
+                if(0<tower.getReceptionPower(player.getLocation())){
+                    player.sendMessage("Found signal on " + tower.getFrequencyString() +", tuning radio");
+                    player.setCompassTarget(tower.getLocation());
+                    receiver.setRadioNr((index+i)%size);
+                    return;
+                }
             }
-            receiver.setRadioNr(index);
+            player.sendMessage("No signal found.");
         }
     }
 }
