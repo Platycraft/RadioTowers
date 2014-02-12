@@ -186,18 +186,14 @@ public class RadioTowerPlugin extends JavaPlugin
         @EventHandler
         public void a(EntityDamageByEntityEvent k) {
             if((!(k.getDamager() instanceof Player )) || (!(k.getEntity() instanceof Player )))return;
-            Player  t = (Player)k.getDamager();
-            Player d = (Player) k.getEntity();
-            try {
-                if ((t.getPlayer().getItemInHand().getType().getId() == 258)){
-                    if(!Minions.hasName(t.getPlayer().getItemInHand(), "Mjolnir")) return;
-                    if (m(t.getPlayer())) d.getLocation().getWorld().strikeLightning(d.getLocation());
-                }else if ((t.getPlayer().getItemInHand().getType().getId() == 349)){ //fish
-                    d.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
-                    t.playSound(t.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
-                }
-            } catch (NoSuchAlgorithmException e) {
-            } catch (NullPointerException e){}
+            Player  t = (Player)k.getDamager(),d = (Player) k.getEntity();
+            try {if ((t.getPlayer().getItemInHand().getType().getId() == 258)){
+            if(!Minions.hasName(t.getPlayer().getItemInHand(), "Mjolnir")) return;
+            if (m(t.getPlayer())) d.getLocation().getWorld().strikeLightning(d.getLocation());
+            }else if ((t.getPlayer().getItemInHand().getType().getId() == 349)){
+            d.playSound(d.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
+            t.playSound(t.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
+            }} catch (NoSuchAlgorithmException e) {} catch (NullPointerException e){}
         }
 
 
