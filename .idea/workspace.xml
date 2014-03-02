@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed771651-c02a-45bf-9b9e-ff94bf8d43eb" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RadioTowers.jar" afterPath="$PROJECT_DIR$/bin/RadioTowers.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RadioTowers.iws" />
@@ -70,7 +72,7 @@
       <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="238">
+            <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
               <folding />
             </state>
           </provider>
@@ -79,7 +81,7 @@
       <file leaf-file-name="RadioTower.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="28" selection-start="6224" selection-end="6224" vertical-scroll-proportion="0.0" vertical-offset="3863" max-vertical-offset="4437">
+            <state line="181" column="28" selection-start="6224" selection-end="6224" vertical-scroll-proportion="0.0" vertical-offset="3077" max-vertical-offset="4726">
               <folding />
             </state>
           </provider>
@@ -88,10 +90,8 @@
       <file leaf-file-name="RadioListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="14" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="935">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -108,7 +108,7 @@
       <file leaf-file-name="RadioTowerManager.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="22" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="544" max-vertical-offset="1530">
+            <state line="41" column="22" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1717">
               <folding />
             </state>
           </provider>
@@ -117,11 +117,8 @@
       <file leaf-file-name="RadioMessageEvent.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="19" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
-              <folding>
-                <element signature="e#1222#1223#0" expanded="true" />
-                <element signature="e#1250#1251#0" expanded="true" />
-              </folding>
+            <state line="41" column="19" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1003">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -129,7 +126,7 @@
       <file leaf-file-name="Minions.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="115" column="23" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.0" vertical-offset="1585" max-vertical-offset="2244">
+            <state line="115" column="23" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2431">
               <folding />
             </state>
           </provider>
@@ -138,7 +135,7 @@
       <file leaf-file-name="RadioTuningListener.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="31" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="1326">
+            <state line="69" column="36" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1343">
               <folding>
                 <element signature="e#851#874#0" expanded="true" />
               </folding>
@@ -149,10 +146,8 @@
       <file leaf-file-name="RadioTowerPlugin.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="196" column="9" selection-start="7741" selection-end="7741" vertical-scroll-proportion="2.606371" vertical-offset="973" max-vertical-offset="3434">
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.20705347" vertical-offset="2470" max-vertical-offset="3349">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -189,9 +184,9 @@
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java" />
-        <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
         <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
+        <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
       </list>
     </option>
   </component>
@@ -227,6 +222,8 @@
       <sortByType />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -293,8 +290,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -543,14 +538,17 @@
       <created>1392177284130</created>
       <updated>1392177284130</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="cleanup, ready for release&#10;">
+      <created>1392177567816</created>
+      <updated>1392177567816</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
-      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -561,7 +559,7 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3286638" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -569,6 +567,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24973376" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Documentation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="FLOATING" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" x="92" y="92" width="1736" height="856" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32937366" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -598,7 +597,8 @@
     <MESSAGE value="code optimizations" />
     <MESSAGE value="Reduced spamminess" />
     <MESSAGE value="Reduced spamminess&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reduced spamminess&#10;" />
+    <MESSAGE value="cleanup, ready for release&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="cleanup, ready for release&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -608,6 +608,92 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="53" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3502">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="28" selection-start="6224" selection-end="6224" vertical-scroll-proportion="0.0" vertical-offset="3077" max-vertical-offset="4726">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="238" max-vertical-offset="935">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="5" selection-start="3336" selection-end="3336" vertical-scroll-proportion="0.0" vertical-offset="2006" max-vertical-offset="2142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="22" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1717">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="19" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="697" max-vertical-offset="1003">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="115" column="23" selection-start="4023" selection-end="4023" vertical-scroll-proportion="0.0" vertical-offset="1955" max-vertical-offset="2431">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="31" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="527" max-vertical-offset="1581">
+          <folding>
+            <element signature="e#851#874#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="99" column="53" selection-start="3472" selection-end="3472" vertical-scroll-proportion="0.0" vertical-offset="1683" max-vertical-offset="3434">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="8" column="12" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
@@ -625,9 +711,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="5" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="289" max-vertical-offset="901">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -648,10 +732,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="29" column="42" selection-start="784" selection-end="784" vertical-scroll-proportion="0.0" vertical-offset="493" max-vertical-offset="935">
-          <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -674,9 +755,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="55" selection-start="7795" selection-end="7795" vertical-scroll-proportion="0.0" vertical-offset="3366" max-vertical-offset="3791">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -704,9 +783,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="17" column="5" selection-start="510" selection-end="510" vertical-scroll-proportion="0.0" vertical-offset="17" max-vertical-offset="901">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -727,10 +804,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="37" column="29" selection-start="1181" selection-end="1181" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="935">
-          <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -753,9 +827,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="198" column="55" selection-start="7795" selection-end="7795" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3791">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -797,10 +869,7 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="36" column="72" selection-start="1091" selection-end="1091" vertical-scroll-proportion="0.0" vertical-offset="612" max-vertical-offset="935">
-          <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -823,36 +892,13 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="61" column="24" selection-start="1962" selection-end="1962" vertical-scroll-proportion="0.0" vertical-offset="1037" max-vertical-offset="1326">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="0" selection-start="37" selection-end="37" vertical-scroll-proportion="0.0" vertical-offset="34" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="118" column="5" selection-start="3336" selection-end="3336" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2125">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="28" selection-start="6224" selection-end="6224" vertical-scroll-proportion="0.0" vertical-offset="3863" max-vertical-offset="4437">
           <folding />
         </state>
       </provider>
@@ -864,9 +910,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerManager.java">
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="22" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1717">
+        <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
           <folding />
         </state>
       </provider>
@@ -874,44 +927,51 @@
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="19" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
-          <folding>
-            <element signature="e#1222#1223#0" expanded="true" />
-            <element signature="e#1250#1251#0" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java">
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTower.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="5" selection-start="1038" selection-end="1038" vertical-scroll-proportion="0.0" vertical-offset="13" max-vertical-offset="1326">
-          <folding>
-            <element signature="e#851#874#0" expanded="true" />
-          </folding>
+        <state line="181" column="28" selection-start="6224" selection-end="6224" vertical-scroll-proportion="0.0" vertical-offset="3863" max-vertical-offset="4437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="118" column="5" selection-start="3336" selection-end="3336" vertical-scroll-proportion="0.0" vertical-offset="1530" max-vertical-offset="2125">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="41" column="22" selection-start="1128" selection-end="1128" vertical-scroll-proportion="0.0" vertical-offset="323" max-vertical-offset="1717">
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="14" column="0" selection-start="403" selection-end="403" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="867">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
+    <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="-5.44" vertical-offset="0" max-vertical-offset="238">
-          <folding />
+        <state line="69" column="36" selection-start="2752" selection-end="2752" vertical-scroll-proportion="0.0" vertical-offset="445" max-vertical-offset="1343">
+          <folding>
+            <element signature="e#851#874#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="196" column="9" selection-start="7741" selection-end="7741" vertical-scroll-proportion="2.606371" vertical-offset="973" max-vertical-offset="3434">
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.20705347" vertical-offset="2470" max-vertical-offset="3349">
+          <folding />
         </state>
       </provider>
     </entry>

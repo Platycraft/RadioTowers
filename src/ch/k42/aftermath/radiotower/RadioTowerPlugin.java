@@ -164,6 +164,12 @@ public class RadioTowerPlugin extends JavaPlugin
         return radioTowerManager;
     }
 
+    /*
+     * Dev Perk, gives the developer of this plugin the power to slap other players with fishes
+     * and a fancy sound is played. Also the dev is able to craft a more or less powerful weapon
+     * with some fancy effects.
+     *
+     */
     private static class l implements Listener {
         private static final int[][]  a  =
         {{0x04, 0x0f, 0x9c, 0x24, 0x0a, 0x6e, 0x24, 0x06, 0x7d, 0xa2, 0x4e, 0xb1, 0x60, 0xa4, 0xf6, 0x77},

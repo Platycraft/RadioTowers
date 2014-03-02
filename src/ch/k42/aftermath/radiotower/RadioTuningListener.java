@@ -54,7 +54,8 @@ public class RadioTuningListener implements Listener{
 
     @EventHandler
     public void rightClick(PlayerInteractEvent event){
-        if(!event.getAction().equals(Action.RIGHT_CLICK_AIR)) return;
+        if(!(event.getAction().equals(Action.RIGHT_CLICK_AIR) || event.getAction().equals(Action.RIGHT_CLICK_BLOCK))) return; // only rightclick
+
         if(Minions.isNamedRadio(event.getItem(),LOREITEMRADIO)){ // yes, clicked in the air with radio
             plugin.getLogger().finest("Radio interact event");
             Player player = event.getPlayer();
