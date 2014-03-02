@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="ed771651-c02a-45bf-9b9e-ff94bf8d43eb" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/RadioTowers.jar" afterPath="$PROJECT_DIR$/bin/RadioTowers.jar" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" afterPath="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plugin.yml" afterPath="$PROJECT_DIR$/plugin.yml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="RadioTowers.iws" />
@@ -69,10 +67,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="plugin.yml" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="plugin.yml" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plugin.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
+            <state line="2" column="14" selection-start="83" selection-end="83" vertical-scroll-proportion="0.039812647" vertical-offset="0" max-vertical-offset="854">
               <folding />
             </state>
           </provider>
@@ -143,10 +141,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="RadioTowerPlugin.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="RadioTowerPlugin.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.20705347" vertical-offset="2470" max-vertical-offset="3349">
+            <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.0" vertical-offset="2470" max-vertical-offset="3349">
               <folding />
             </state>
           </provider>
@@ -155,7 +153,7 @@
       <file leaf-file-name="config.yml" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
+            <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
               <folding />
             </state>
           </provider>
@@ -184,9 +182,9 @@
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/Minions.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioListener.java" />
-        <option value="$PROJECT_DIR$/plugin.yml" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java" />
         <option value="$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTuningListener.java" />
+        <option value="$PROJECT_DIR$/plugin.yml" />
       </list>
     </option>
   </component>
@@ -542,7 +540,11 @@
       <created>1392177567816</created>
       <updated>1392177567816</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="fixed right click, doesn't matter now if it's air or a block&#10;">
+      <created>1393782399130</created>
+      <updated>1393782399130</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -598,7 +600,8 @@
     <MESSAGE value="Reduced spamminess" />
     <MESSAGE value="Reduced spamminess&#10;" />
     <MESSAGE value="cleanup, ready for release&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="cleanup, ready for release&#10;" />
+    <MESSAGE value="fixed right click, doesn't matter now if it's air or a block&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed right click, doesn't matter now if it's air or a block&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -910,20 +913,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="8" column="12" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="136" max-vertical-offset="238">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="289">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioMessageEvent.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="41" column="19" selection-start="1243" selection-end="1243" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="901">
@@ -970,7 +959,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ch/k42/aftermath/radiotower/RadioTowerPlugin.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.20705347" vertical-offset="2470" max-vertical-offset="3349">
+        <state line="171" column="7" selection-start="5941" selection-end="5941" vertical-scroll-proportion="0.0" vertical-offset="2470" max-vertical-offset="3349">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="502" selection-end="502" vertical-scroll-proportion="-6.8" vertical-offset="0" max-vertical-offset="289">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="14" selection-start="83" selection-end="83" vertical-scroll-proportion="0.039812647" vertical-offset="0" max-vertical-offset="854">
           <folding />
         </state>
       </provider>
