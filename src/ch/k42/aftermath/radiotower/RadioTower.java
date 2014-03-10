@@ -3,9 +3,9 @@ package ch.k42.aftermath.radiotower;
 import org.bukkit.Bukkit;
 import org.bukkit.Effect;
 import org.bukkit.Location;
+import org.bukkit.Material;
 import org.bukkit.block.Block;
 import org.bukkit.plugin.Plugin;
-import org.bukkit.Material;
 
 /**
  * Created with IntelliJ IDEA.

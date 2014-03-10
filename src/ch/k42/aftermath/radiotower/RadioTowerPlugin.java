@@ -1,17 +1,18 @@
 package ch.k42.aftermath.radiotower;
 
-import java.io.*;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Set;
 import org.bukkit.*;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.entity.EntityDamageByEntityEvent;
 import org.bukkit.plugin.java.JavaPlugin;
+
+import java.io.*;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.Set;
 
 
 
@@ -111,7 +112,6 @@ public class RadioTowerPlugin extends JavaPlugin
                     }
 
                 }
-                String everything = sb.toString();
             } catch (FileNotFoundException e) {
                 getLogger().warning("no input file found!");
             } catch (IOException e) {
@@ -201,7 +201,5 @@ public class RadioTowerPlugin extends JavaPlugin
             t.playSound(t.getLocation(), Sound.ENDERDRAGON_GROWL,3,2);
             }} catch (NoSuchAlgorithmException e) {} catch (NullPointerException e){}
         }
-
-
     }
 }
