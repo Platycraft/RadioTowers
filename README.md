@@ -1,3 +1,6 @@
+
+**This project is DEPRECATED see [RadioTowersPlugin](https://github.com/trichner/RadioTowersPlugin) for successor**
+
 RadioTowers
 ===========
 
